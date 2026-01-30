@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Natural Ice Cream | Taste The Original</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+
+        :root {
+            --brand-green: #00ac4e;
+            --dark-gray: #39393f;
+            --cream-bg: #efe5c6;
+        }
+
+        body { font-family: "Plus Jakarta Sans", sans-serif; background-color: #fff; color: #333; }
+
+        /* --- HEADER & SEARCH --- */
+        .header-container { padding: 15px 8%; background: #fff; }
+        .logo-img { height: 50px; width: auto; }
+        .search-input {
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            padding: 8px 15px;
+            width: 300px;
+            outline: none;
+        }
+        .search-btn {
+            background: var(--brand-green);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 0 4px 4px 0;
+            margin-left: -5px;
+        }
+
+        /* --- NAV --- */
+        .nav-bar { background-color: var(--dark-gray); padding: 12px 0; }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding: 0 15px;
+        }
+        .nav-bar a:hover { color: var(--brand-green); }
+
+        /* --- SECTIONS --- */
+        .bg-cream-section { background-color: var(--cream-bg); padding: 60px 0; position: relative; }
+        .white-card-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        /* --- DECORATIVE LEAVES --- */
+        .leaf-left { position: absolute; left: 0; top: 10%; width: 150px; z-index: 1; }
+        .leaf-right { position: absolute; right: 0; bottom: 5%; width: 150px; z-index: 1; transform: rotate(180deg); }
+
+        /* --- BEST SELLERS --- */
+        .product-card {
+            border: none;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-card h5 {
+            font-weight: 800;
+            font-size: 14px;
+            padding: 15px 0;
+            text-transform: uppercase;
+            color: #222;
+        }
+
+        /* --- INGREDIENT STORY --- */
+        .ing-icon { width: 70px; margin-bottom: 20px; }
+        .ing-title { font-weight: 800; font-size: 20px; margin-bottom: 10px; }
+        .ing-text { color: #666; font-size: 14px; line-height: 1.6; }
+
+        /* --- FOOTER ORDER STRIP --- */
+        .order-strip {
+            background-color: #0e741c;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .swiggy-zomato img { height: 45px; margin: 0 20px; }
+
+        footer { background: #232020; color: #aaa; padding: 60px 8%; font-size: 14px; }
+        footer h6 { color: #989898; font-weight: 700; text-transform: uppercase; margin-bottom: 20px; }
+        footer ul { list-style: none; padding: 0; }
+        footer li { margin-bottom: 10px; cursor: pointer; }
+        footer li:hover { color: #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-success text-center py-2">
+        <p class="text-white m-0 small fw-bold">*This is only a brand name and does not represent its true nature.</p>
+    </div>
+
+    <div class="header-container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+            <img src="https://naturalicecreams.in/wp-content/uploads/2021/08/Logo-with-asterisk-01-1.jpg" class="logo-img" alt="Naturals">
+            <a href="#" class="btn btn-success fw-bold px-4" style="background-color: var(--brand-green);">Order Now</a>
+        </div>
+        <div class="d-flex align-items-center">
+            <input type="text" class="search-input" placeholder="I'm looking for...">
+            <button class="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="container d-flex justify-content-center">
+            <a href="#">Tree To Treat</a>
+            <a href="#">Products</a>
+            <a href="#">Our Legacy</a>
+            <a href="#">Malai Magic</a>
+            <a href="#">Franchise Queries</a>
+            <a href="#">Store Locator</a>
+        </div>
+    </nav>
+
+    <section>
+        <img width="100%" src="https://naturalicecreams.in/wp-content/uploads/2026/01/Tree-To-Treat-Website_-Assets_Home-page-Banner-size-desktop-1920-%C3%97-600-px-.png">
+    </section>
+
+    <div class="bg-cream-section">
+        <img src="https://naturalicecreams.in/wp-content/uploads/2026/01/Asset-11@4x.png" class="leaf-left">
+        <img src="https://naturalicecreams.in/wp-content/uploads/2026/01/Asset-5@4x.png" class="leaf-right">
+
+        <div class="white-card-box mb-5">
+            <h2 class="fw-bold">“If I want to sell ice cream, I should invest in trees.”</h2>
+            <p class="text-muted">– Late Shri Raghunandan Kamath, Founder, Naturals Ice Cream</p>
+            <div class="mt-4">
+                <iframe src="https://www.youtube.com/embed/csk-oB1b_k0" class="w-100" height="400" frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <h1 class="text-center fw-800 mb-5" style="font-weight: 800;">Best Sellers</h1>
+            <div class="row px-md-5">
+                <div class="col-6 col-md-4">
+                    <div class="product-card text-center">
+                        <img src="https://naturalicecreams.in/wp-content/uploads/2023/11/500GM_Ice-Cream-Container_Mango_Lid-1-300x300.jpg" class="w-100">
+                        <h5>Mango Ice Cream</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="product-card text-center">
+                        <img src="https://naturalicecreams.in/wp-content/uploads/2023/11/500GM_Ice-Cream-Container_Sitaphal_Lid-300x300.jpg" class="w-100">
+                        <h5>Sitaphal Ice Cream</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="product-card text-center">
+                        <img src="https://naturalicecreams.in/wp-content/uploads/2023/11/500GM_Ice-Cream-Container_Strawberry_Lid-300x300.jpg" class="w-100">
+                        <h5>Strawberry Ice Cream</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-white text-center">
+        <h1 class="fw-800 mb-5">Ingredient Story</h1>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4 px-4">
+                    <img src="https://naturalicecreams.in/wp-content/uploads/2023/12/fruit_icon-1.png" class="ing-icon">
+                    <h3 class="ing-title">1. Fruits</h3>
+                    <p class="ing-text">Fruit is in the DNA of Naturals Ice Cream. We go to great lengths to source fresh fruits only from their most popular locations.</p>
+                </div>
+                <div class="col-md-4 px-4">
+                    <img src="https://naturalicecreams.in/wp-content/uploads/2023/12/milk_icon-1.png" class="ing-icon">
+                    <h3 class="ing-title">2. Milk</h3>
+                    <p class="ing-text">The milk that goes into Naturals ice cream comes from the same vendor for over four decades now. This makes it rich and creamy.</p>
+                </div>
+                <div class="col-md-4 px-4">
+                    <img src="https://naturalicecreams.in/wp-content/uploads/2023/12/sugar_icon-1.png" class="ing-icon">
+                    <h3 class="ing-title">3. Sugar</h3>
+                    <p class="ing-text">We use pharma sugar, which is so fine and pure that it’s certified to be used even in medicines for consistent quality.</p>
+                </div>
+            </div>
+        </div>
+        <img src="https://naturalicecreams.in/wp-content/uploads/2026/01/3-ingredients-milkfruits-03-1-1.png" class="w-100 mt-5">
+    </section>
+
+    <div class="order-strip">
+        <button class="btn btn-dark fw-800 px-5 py-3 mb-4" style="text-transform: uppercase;">Order Now</button>
+        <p class="fs-2 fw-bold text-decoration-underline mb-4" style="letter-spacing: 2px;">ALSO AVAILABLE ON</p>
+        <div class="swiggy-zomato">
+            <img src="https://naturalicecreams.in/wp-content/uploads/2025/07/swiggyLogo.png">
+            <img src="https://naturalicecreams.in/wp-content/uploads/2024/02/logo_zomato-1.png">
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4">
+                <h6>Contact Us</h6>
+                <p>Plot 55 ABCD & 56 D, Kandivali Industrial Estate, Charkop, Kandivali (W), Mumbai – 400 067.</p>
+                <p>customercare@naturalicecreams.in</p>
+                <p class="fw-bold">8080801984</p>
+            </div>
+            <div class="col-md-3">
+                <h6>About Naturals</h6>
+                <ul>
+                    <li>Ingredient Story</li>
+                    <li>Our Legacy</li>
+                    <li>Franchise Queries</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6>Others</h6>
+                <ul>
+                    <li>Store Locator</li>
+                    <li>Nutritional Info</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Shop</h6>
+                <ul>
+                    <li>Round The Year</li>
+                    <li>Seasonal</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
